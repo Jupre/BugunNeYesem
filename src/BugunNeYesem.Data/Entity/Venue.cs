@@ -4,6 +4,7 @@ namespace BugunNeYesem.Data.Entity
 {
     public class Venue : BaseEntity
     {
+        public string FoursquareVenueId { get; set; }
         public string Name { get; set; }
         public string Contact { get; set; }
         public string Location { get; set; }

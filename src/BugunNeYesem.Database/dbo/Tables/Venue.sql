@@ -2,6 +2,7 @@
 (
 	[Id]				INT             IDENTITY (1, 1) NOT NULL, 
     [CreatedDate]		DATETIME						NULL, 
+	[FoursquareVenueId] CHAR(32)						NULL,
     [Name]				NVARCHAR(150)					NULL, 
     [Contact]			NVARCHAR(150)					NULL, 
     [Location]			NVARCHAR(1000)					NULL, 
@@ -11,5 +12,6 @@
     [Description]		NVARCHAR(1000)					NULL, 
     [CreatedAt]			DATETIME						NULL, 
     [Likes]				INT								NULL, 
-    [Attributes]		NVARCHAR(500)					NULL,
+    [Attributes]		NVARCHAR(500)					NULL, 
+
 )
