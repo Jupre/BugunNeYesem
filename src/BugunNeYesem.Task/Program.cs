@@ -10,6 +10,7 @@ namespace BugunNeYesem.Task
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
