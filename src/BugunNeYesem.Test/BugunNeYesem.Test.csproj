@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Fakes Include="Fakes\FakeItEasy.fakes" />
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
