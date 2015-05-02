@@ -12,7 +12,7 @@ namespace BugunNeYesem.Data.Entity
         public decimal Rating { get; set; }
         public string Description { get; set; }
         public DateTime CreatedAt { get; set; }
-        public int Likes { get; set; }
+        public long Likes { get; set; }
         public string Attributes { get; set; }
 
     }
