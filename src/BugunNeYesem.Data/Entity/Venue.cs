@@ -35,7 +35,7 @@ namespace BugunNeYesem.Data.Entity
 
         public Venue()
         {
-            DistanceActual = 5;
+            DistanceActual = 1;
         }
     }
 }

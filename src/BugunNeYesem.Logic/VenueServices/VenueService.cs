@@ -37,10 +37,10 @@ namespace BugunNeYesem.Logic.VenueServices
                 Rating = Convert.ToDecimal(venue.rating),
                 Url = venue.url,
                 Location = string.Format("lat:{0}, log:{1}", venue.location.lat, venue.location.lng),
-                Contact = string.Format("name:{0}, phone:{1}", venue.contact.name, venue.contact.phone),
-                Likes = venue.likes.count,
-                Description = venue.description,
-                CreatedAt = Convert.ToDateTime(venue.createdAt)
+                Contact = string.Format("name:{0}, phone:{1}", venue.contact.name, venue.contact.phone)
+                //Likes = venue.likes.count
+                //Description = venue.description,
+                //CreatedAt = Convert.ToDateTime(venue.createdAt)
             };
         }
 
