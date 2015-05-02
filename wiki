@@ -1,0 +1,8 @@
+- 2 km çaptaki zomato üzerindeki popüler 3 yerin önerilmesi.
+- Aynı hafta içinde aynı yeri sistem 2 defa öneremez.
+- 
+- Zomata Api entegrasyonu. ( https://www.zomato.com/tr/api/documentation#Get-nearby-restaurants )
+- Sistemin bir ui 'ı yoktur. Console ugulama olup belli bir zamanda çalışır. 
+- Çalışma zamanı Windows scheduler'dan tetiklenir.
+- Haftasonları sistem çalışmayacak.
+- 
