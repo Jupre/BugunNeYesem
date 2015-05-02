@@ -1,10 +1,9 @@
 ﻿using System;
 using BugunNeYesem.Data.Entity;
-using BugunNeYesem.Logic.Recommenders;
 
-namespace BugunNeYesem.Test
+namespace BugunNeYesem.Logic.Recommenders
 {
-    internal class FakeRecommendationHistory : IRecommendationHistory
+    public class DefaultRecommendationHistory : IRecommendationHistory
     {
         public bool RecommendedBefore(Venue venue, TimeSpan range)
         {

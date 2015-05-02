@@ -8,13 +8,13 @@ namespace BugunNeYesem.Logic
         public Location GetLocation()
         {
             var latitude = ConfigurationManager.AppSettings["CurrentLatitude"];
-            if (latitude == null || string.IsNullOrWhiteSpace(latitude))
+            if (string.IsNullOrWhiteSpace(latitude))
             {
                 throw new Exception("CurrentLatitude not setted");
             }
 
             var longitude = ConfigurationManager.AppSettings["CurrentLongitude"];
-            if (longitude == null || string.IsNullOrWhiteSpace(longitude))
+            if (string.IsNullOrWhiteSpace(longitude))
             {
                 throw new Exception("CurrentLongitude not setted");
             }

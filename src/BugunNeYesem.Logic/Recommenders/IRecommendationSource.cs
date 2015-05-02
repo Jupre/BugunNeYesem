@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using BugunNeYesem.Data.Entity;
 
 namespace BugunNeYesem.Logic.Recommenders
 {

@@ -56,6 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BugunNeYesem.Data\BugunNeYesem.Data.csproj">
+      <Project>{1CE05272-148A-438F-871C-4B2D5313F4F1}</Project>
+      <Name>BugunNeYesem.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BugunNeYesem.Logic\BugunNeYesem.Logic.csproj">
       <Project>{1F9C4945-A10E-435B-8A35-1CAE1A812162}</Project>
       <Name>BugunNeYesem.Logic</Name>
