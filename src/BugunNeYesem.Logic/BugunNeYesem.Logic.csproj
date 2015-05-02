@@ -52,6 +52,8 @@
     <Compile Include="Location.cs" />
     <Compile Include="LocationService.cs" />
     <Compile Include="NotificationService.cs" />
+    <Compile Include="Recommenders\IRecommendationHistory.cs" />
+    <Compile Include="Recommenders\Venue.cs" />
     <Compile Include="VenueServices\VenueService.cs" />
     <Compile Include="VenueServices\IVenueService.cs" />
     <Compile Include="Recommenders\DefaultRecommender.cs" />
@@ -66,7 +68,7 @@
       <Project>{1CE05272-148A-438F-871C-4B2D5313F4F1}</Project>
       <Name>BugunNeYesem.Data</Name>
     </ProjectReference>
-    <Compile Include="Properties\AssemblyInfo.cs" />    
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

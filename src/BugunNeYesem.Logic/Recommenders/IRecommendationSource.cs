@@ -4,6 +4,6 @@ namespace BugunNeYesem.Logic.Recommenders
 {
     public interface IRecommendationSource
     {
-        IEnumerable<string> List(int len);
+        IEnumerable<Venue> List(int len);
     }
 }
