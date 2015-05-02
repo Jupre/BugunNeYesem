@@ -1,6 +1,6 @@
-﻿using System.Xml.Serialization;
+﻿using NUnit.Framework;
+
 using BugunNeYesem.Logic;
-using NUnit.Framework;
 
 namespace BugunNeYesem.Test
 {

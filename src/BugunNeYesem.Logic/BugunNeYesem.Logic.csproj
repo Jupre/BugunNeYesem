@@ -41,12 +41,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ILocationService.cs" />
+    <Compile Include="INotificationService.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="LocationService.cs" />
+    <Compile Include="NotificationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recommenders\DefaultRecommender.cs" />
     <Compile Include="Recommenders\IRecommendationSource.cs" />
     <Compile Include="Recommenders\IRecommender.cs" />
+    <Compile Include="Utils\EmailSender.cs" />
+    <Compile Include="Utils\IEmailSender.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BugunNeYesem.Data\BugunNeYesem.Data.csproj">
+      <Project>{1CE05272-148A-438F-871C-4B2D5313F4F1}</Project>
+      <Name>BugunNeYesem.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
