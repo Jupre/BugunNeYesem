@@ -11,9 +11,12 @@ namespace BugunNeYesem.Task
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
+=======
             var locationService = new LocationService();
             var location = locationService.GetLocation();
 
+>>>>>>> origin/master
 
         }
     }

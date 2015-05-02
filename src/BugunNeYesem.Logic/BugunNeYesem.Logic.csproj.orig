@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0F6B1B53-DF70-4344-AD06-2199575D961C}</ProjectGuid>
+    <ProjectGuid>{1F9C4945-A10E-435B-8A35-1CAE1A812162}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BugunNeYesem.Test</RootNamespace>
-    <AssemblyName>BugunNeYesem.Test</AssemblyName>
+    <RootNamespace>BugunNeYesem.Logic</RootNamespace>
+    <AssemblyName>BugunNeYesem.Logic</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,14 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FakeItEasy">
-      <HintPath>..\..\packages\FakeItEasy.1.25.2\lib\net40\FakeItEasy.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    <Reference Include="SharpSquare">
+      <HintPath>..\..\packages\SharpSquare.1.0.0.2\lib\net45\SharpSquare.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,20 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LocationServiceTests.cs" />
+    <Compile Include="ILocationService.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="LocationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RecommandationServiceTests.cs" />
+    
   </ItemGroup>
   <ItemGroup>
-    <Fakes Include="Fakes\FakeItEasy.fakes" />
-    <None Include="App.config" />
+    <Compile Include="Recommenders\DefaultRecommender.cs" />
+    <Compile Include="Recommenders\IRecommendationSource.cs" />
+    <Compile Include="Recommenders\IRecommender.cs" />
+    <Compile Include="VenueServices\IVenueService.cs" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BugunNeYesem.Logic\BugunNeYesem.Logic.csproj">
-      <Project>{1F9C4945-A10E-435B-8A35-1CAE1A812162}</Project>
-      <Name>BugunNeYesem.Logic</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

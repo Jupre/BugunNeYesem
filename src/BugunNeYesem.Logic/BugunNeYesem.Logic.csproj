@@ -49,10 +49,13 @@
     <Compile Include="ILocationService.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="LocationService.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VenueServices\IVenueService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />    
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Recommenders\DefaultRecommender.cs" />
+    <Compile Include="Recommenders\IRecommendationSource.cs" />
+    <Compile Include="Recommenders\IRecommender.cs" />
+    <Compile Include="VenueServices\IVenueService.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
