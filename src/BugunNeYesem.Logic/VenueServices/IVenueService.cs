@@ -3,20 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FourSquare.SharpSquare.Core;
 
 namespace BugunNeYesem.Logic.VenueServices
 {
     public interface IVenueService
     {
-         
-    }
-
-    public class VenueService : IVenueService
-    {
-        public VenueService()
-        {
-            
-        }
+        IEnumerable<string> GetVenues(Location location, string radius = "2000");
     }
 }
