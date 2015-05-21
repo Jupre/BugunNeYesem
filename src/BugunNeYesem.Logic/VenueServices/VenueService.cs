@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using BugunNeYesem.Data.Entity;
+using BugunNeYesem.Data.Helpers;
 using FourSquare.SharpSquare.Core;
 
 namespace BugunNeYesem.Logic.VenueServices
@@ -49,7 +50,7 @@ namespace BugunNeYesem.Logic.VenueServices
         {
             get
             {
-                var clientSecret = ConfigurationManager.AppSettings["FoursquareClientSecret"];
+                var clientSecret = ConfigurationManager.AppSettings[ConstHelper.FOURSQUARE_CLIENT_SECRET];
                 if (string.IsNullOrWhiteSpace(clientSecret))
                 {
                     throw new Exception("FoursquareClientSecret not setted");
@@ -62,7 +63,7 @@ namespace BugunNeYesem.Logic.VenueServices
         {
             get
             {
-                var clientId = ConfigurationManager.AppSettings["FoursquareClientId"];
+                var clientId = ConfigurationManager.AppSettings[ConstHelper.FOURSQUARE_CLIENT_ID];
                 if (string.IsNullOrWhiteSpace(clientId))
                 {
                     throw new Exception("FoursquareClientId not setted");

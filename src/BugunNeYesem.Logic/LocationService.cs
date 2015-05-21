@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Configuration;
+using BugunNeYesem.Data.Helpers;
 
 namespace BugunNeYesem.Logic
 {
@@ -7,13 +8,13 @@ namespace BugunNeYesem.Logic
     {
         public Location GetLocation()
         {
-            var latitude = ConfigurationManager.AppSettings["CurrentLatitude"];
+            var latitude = ConfigurationManager.AppSettings[ConstHelper.CURRENT_LATITUDE];
             if (string.IsNullOrWhiteSpace(latitude))
             {
                 throw new Exception("CurrentLatitude not setted");
             }
 
-            var longitude = ConfigurationManager.AppSettings["CurrentLongitude"];
+            var longitude = ConfigurationManager.AppSettings[ConstHelper.CURRENT_LONGITUDE];
             if (string.IsNullOrWhiteSpace(longitude))
             {
                 throw new Exception("CurrentLongitude not setted");

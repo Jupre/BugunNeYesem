@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 
 using BugunNeYesem.Data;
+using BugunNeYesem.Data.Helpers;
 using BugunNeYesem.Logic.Utils;
 
 namespace BugunNeYesem.Logic
@@ -16,8 +17,8 @@ namespace BugunNeYesem.Logic
 
         public bool NotifyFlowdockWithRecomendation(RecommendedRestaurant recommendedRestaurant)
         {
-            var to = ConfigurationManager.AppSettings["FlowdockChannelEmail"];
-            var subject = ConfigurationManager.AppSettings["NotifyMailSubject"];
+            var to = ConfigurationManager.AppSettings[ConstHelper.FLOWDOCK_CHANNEL_EMAIL];
+            var subject = ConfigurationManager.AppSettings[ConstHelper.NOTIFY_MAIL_SUBJECT];
             var body = "<p>Haydi yemeğe gidelim :)<br/>Bugün <strong>" + recommendedRestaurant.RestaurantName + "</strong> tavsiye ediyorum..."
                        + "<br/><hr/><br/>"
                        + "<strong>sistem puanı:</strong> " + recommendedRestaurant.EditorRating + "<br/>"

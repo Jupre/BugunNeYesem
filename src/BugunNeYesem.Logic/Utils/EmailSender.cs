@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Net;
 using System.Net.Mail;
+using BugunNeYesem.Data.Helpers;
 
 namespace BugunNeYesem.Logic.Utils
 {
@@ -24,11 +25,11 @@ namespace BugunNeYesem.Logic.Utils
 
         public EmailSender()
         {
-            _sender = ConfigurationManager.AppSettings["SMTP_EMAIL"];
-            _password = ConfigurationManager.AppSettings["SMTP_PWD"];
-            _smtpHost = ConfigurationManager.AppSettings["SMTP_HOST"];
-            _smtpPort = Convert.ToInt32(ConfigurationManager.AppSettings["SMTP_PORT"]);
-            _enableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["SMTP_SSL"]);
+            _sender = ConfigurationManager.AppSettings[ConstHelper.SMTP_EMAIL];
+            _password = ConfigurationManager.AppSettings[ConstHelper.SMTP_PWD];
+            _smtpHost = ConfigurationManager.AppSettings[ConstHelper.SMTP_HOST];
+            _smtpPort = Convert.ToInt32(ConfigurationManager.AppSettings[ConstHelper.SMTP_PORT]);
+            _enableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings[ConstHelper.SMTP_SSL]);
         }
 
         public void Send(string to, string subject, string body)
